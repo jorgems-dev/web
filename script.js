@@ -1,9 +1,21 @@
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links")
-    const icon = document.querySelector(".icono-desplegable")
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
+  const menu = document.querySelector(".menu-links");
+  menu.classList.toggle("open");
 }
+
+function actualizarAlturaNav() {
+  const nav = document.getElementById("nav-desplegable");
+  if (!nav) return;
+
+  document.documentElement.style.setProperty(
+    "--nav-height",
+    nav.offsetHeight + "px"
+  );
+}
+
+window.addEventListener("load", actualizarAlturaNav);
+window.addEventListener("resize", actualizarAlturaNav);
+
 
 function abrirCV() {
     window.open("recursos/CVMihaiSilePavelAsiminei2026.pdf", "_blank")
