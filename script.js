@@ -1,8 +1,16 @@
-function toggleMenu() {
+function toggleMenu(delay = 300) {
     const menu = document.querySelector(".menu-links")
     const icon = document.querySelector(".icono-desplegable")
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
+
+    if (!menu.classList.contains("open")) {
+        menu.classList.add("open")
+        icon.classList.add("open")
+    } else {
+        setTimeout(() => {
+            menu.classList.remove("open")
+            icon.classList.remove("open")
+        }, delay)
+    }
 }
 
 function abrirCV() {
