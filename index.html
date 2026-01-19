@@ -33,10 +33,10 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#sobre-mi" onclick="toggleMenu(500)">Sobre mi</a></li>
-                <li><a href="#experiencia" onclick="toggleMenu(500)">Habilidades</a></li>
-                <li><a href="#proyectos" onclick="toggleMenu(500)">Proyectos</a></li>
-                <li><a href="#contacto" onclick="toggleMenu(500)">Contacto</a></li>
+                <li><a href="#sobre-mi" onclick="irA('#sobre-mi')">Sobre mi</a></li>
+                <li><a href="#experiencia" onclick="irA('#experiencia')">Habilidades</a></li>
+                <li><a href="#proyectos" onclick="irA('#proyectos')">Proyectos</a></li>
+                <li><a href="#contacto" onclick="irA('#contacto')">Contacto</a></li>
             </div>
         </div>
     </nav>
@@ -51,7 +51,7 @@
                 <p class="div-text-p2">Desarrollador <span class="div-text-sub">Full-stack Junior</span></p>
                 <div class="btn-div">
                     <button class="btn btn-color-1" onclick="abrirCV(), descargarCV()">Descargar CV</button>
-                    <button class="btn btn-color-2" onclick="contactar()">Contactar</button>
+                    <button class="btn btn-color-2" onclick="irA('#contacto')">Contactar</button>
                 </div>
 
                 <div id="redes-sociales">
