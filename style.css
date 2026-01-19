@@ -16,8 +16,6 @@
 
 section {
   scroll-margin-top: var(--nav-height);
-  opacity: 0;
-  transition: opacity 1s ease;
 }
 
 html, body {
@@ -177,8 +175,9 @@ a {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
   margin-top: 2rem;
-  z-index: 1005; 
+  z-index: 100; 
 }
+
 
 .menu-links a {
   display: block;
@@ -215,6 +214,17 @@ a {
 
 .icono-desplegable.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+}
+
+section {
+  padding-top: 4vh;
+  scroll-margin-top: 10vh;
+  height: auto;
+  margin: 0 5%;
+  box-sizing: border-box;
+  min-height: fit-content;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 section.visible {
