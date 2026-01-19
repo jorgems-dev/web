@@ -177,9 +177,8 @@ a {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
   margin-top: 2rem;
-  z-index: 100; 
+  z-index: 1005; 
 }
-
 
 .menu-links a {
   display: block;
