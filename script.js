@@ -11,8 +11,17 @@ function irA(selector) {
     menu.classList.remove("open")
     icon.classList.remove("open")
 
-    document.querySelector(selector).scrollIntoView({ behavior: "smooth" })
+    const section = document.querySelector(selector)
+    const topOffset = 70 // altura aproximada del menú móvil
+    const elementPosition = section.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - topOffset
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    })
 }
+
 
 function abrirCV() {
     window.open("recursos/CVMihaiSilePavelAsiminei2026.pdf", "_blank")
