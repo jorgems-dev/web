@@ -29,10 +29,6 @@
 
 @media screen and (max-width: 600px) {
 
-  section {
-    scroll-margin-top: 12vh; 
-  }
-
   #perfil {
     flex-direction: column;
     height: auto;
