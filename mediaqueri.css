@@ -28,7 +28,9 @@
 }
 
 @media screen and (max-width: 600px) {
-
+  section {
+    scroll-margin-top: 10vh;
+  }
   #perfil {
     flex-direction: column;
     height: auto;
@@ -68,13 +70,21 @@
     display: none;
   }
 
+  #nav-desplegable {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1003;
+  }
   .menu-desplegable {
     position: relative; 
   }
 
   .menu-links {
-    position: fixed;       
-    top: 5vh;             
+    position: absolute;       
+    top: 3vh;             
     right: 0;              
     background-color: white;
     width: fit-content;
@@ -82,11 +92,13 @@
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 1002;         
+    z-index: 1002; 
+    pointer-events: none;        
   }
 
   .menu-links.open {
-    max-height: 500px;     
+    max-height: 500px; 
+    pointer-events: auto;    
   }
 
   .menu-links li {
