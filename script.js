@@ -5,24 +5,6 @@ function toggleMenu() {
     icon.classList.toggle("open")
 }
 
-function irA(selector) {
-    const menu = document.querySelector(".menu-links")
-    const icon = document.querySelector(".icono-desplegable")
-    menu.classList.remove("open")
-    icon.classList.remove("open")
-
-    const section = document.querySelector(selector)
-    const topOffset = 70 
-    const elementPosition = section.getBoundingClientRect().top
-    const offsetPosition = elementPosition + window.pageYOffset - topOffset
-
-    window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-    })
-}
-
-
 function abrirCV() {
     window.open("recursos/CVMihaiSilePavelAsiminei2026.pdf", "_blank")
 }
