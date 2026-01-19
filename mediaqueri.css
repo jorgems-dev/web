@@ -28,6 +28,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
   #perfil {
     flex-direction: column;
     height: auto;
@@ -73,7 +74,7 @@
     left: 0;
     width: 100%;
     background-color: white;
-    z-index: 1002;
+    z-index: 1003;
   }
   .menu-desplegable {
     position: relative; 
@@ -81,7 +82,7 @@
 
   .menu-links {
     position: absolute;       
-    top: 100%;             
+    top: 3vh;             
     right: 0;              
     background-color: white;
     width: fit-content;
@@ -89,7 +90,7 @@
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 1003; 
+    z-index: 1002; 
     pointer-events: none;        
   }
 
