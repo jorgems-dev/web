@@ -3,18 +3,16 @@ function toggleMenu() {
   menu.classList.toggle("open");
 }
 
-function actualizarAlturaNav() {
-  const nav = document.getElementById("nav-desplegable");
-  if (!nav) return;
+document.querySelectorAll(".menu-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    const menu = document.querySelector(".menu-links");
 
-  document.documentElement.style.setProperty(
-    "--nav-height",
-    nav.offsetHeight + "px"
-  );
-}
+    setTimeout(() => {
+      menu.classList.remove("open");
+    }, 0);
+  });
+});
 
-window.addEventListener("load", actualizarAlturaNav);
-window.addEventListener("resize", actualizarAlturaNav);
 
 
 function abrirCV() {
