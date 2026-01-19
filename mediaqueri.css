@@ -1,0 +1,268 @@
+@media screen and (max-width: 1400px) {
+  .lista-sobre-mi {
+    justify-content: center;
+  }
+
+  .card-sobre-mi {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .btn {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+  }
+  #nav-principal {
+    display: none;
+  }
+
+  #nav-desplegable {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #perfil {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+    margin-bottom: 0;
+    padding-top: 7rem;
+    align-items: center;
+    
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+  
+  .div-perfil-imagen {
+    display: none;
+  }
+
+  .div-text-sub {
+    font-size: 1rem;
+  }
+
+  .titulo-sobre-mi, 
+  .titulo-habilidades, 
+  .titulo-proyectos, 
+  .titulo-contacto {
+    font-size: 1.5rem;
+  }
+
+  .div-text-p1,
+  .div-text-p2, 
+  .div-text-p2-sobre-mi{
+    font-size: 1rem;
+  }
+
+  #nav-principal {
+    display: none;
+  }
+
+  .menu-desplegable {
+    position: relative; 
+  }
+
+  .menu-links {
+    position: fixed;       
+    top: 5vh;             
+    right: 0;              
+    background-color: white;
+    width: fit-content;
+    max-height: 0;         
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1002;         
+  }
+
+  .menu-links.open {
+    max-height: 500px;     
+  }
+
+  .menu-links li {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-links li:last-child {
+    border-bottom: none;
+  }
+
+  .btn-div {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    width: 8rem;
+  }
+
+  .lista-sobre-mi {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .titulo-sobre-mi {
+    margin: 1rem auto;
+  }
+
+  .card-sobre-mi {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .texto-debajo-card-sobre-mi {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .div-text-p1-sobre-mi {
+    font-size: 1.5rem;
+  }
+  .div-text-p3-sobre-mi {
+    font-size: 1rem;
+  }
+
+  .lista-experiencia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card-experiencia {
+    width: 100%;
+  }
+
+  .div-frontend {
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 2rem auto;
+  }
+
+  .texto-experiencia-p1 {
+    font-size: 1.1rem;
+  }
+
+  .lista-proyectos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .img-backend {
+    width: 50%;
+    height: 10rem;
+  }
+
+  .img-cliente {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto-proyectos-p1 {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .div-icono-github-proyecto a{
+    display: none;
+  }
+
+  .div-icono-github-proyecto img{
+    margin-top: 2rem;
+  }
+
+
+  #contacto .div-contacto-info p {
+    display: none;
+  }
+  #contacto {
+    margin: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .card-contacto {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .icono-contacto {
+    height: 2.5rem;
+  }
+
+  .icono-contacto-telefono {
+    height: 2.5rem;
+  }
+
+  .icono-contacto-gmail {
+    height: 3.2rem;
+  }
+
+  footer {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .div-text-p1-footer {
+    display: none;
+  }
+  .div-text-p2-footer {
+    font-size: 1rem;
+  }
+
+  .div-footer-iconos {
+    display: none;
+
+  }
+
+  #footer-copyright {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (hover: none) {
+  .nav-links a:hover,
+  .nombre a:hover {
+    color: black;
+  }
+
+  .nav-links a::after,
+  .nombre a::after {
+    width: 100%;
+    background-color: black;
+  }
+
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .card-sobre-mi:hover {
+    transform: none;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  }
+}
+

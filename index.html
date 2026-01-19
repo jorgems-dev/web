@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueri.css">
+
+</head>
+<body>
+    <nav id="nav-principal">
+        <div class="nombre">
+            <a href="#perfil">Jorge-dev</a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#experiencia">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="nav-desplegable">
+        <div class="nombre">
+            <a href="#perfil">Jorge-dev</a>
+        </div>
+        <div class="menu-desplegable">
+            <div class="icono-desplegable" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre-mi" onclick="toggleMenu()">Sobre mi</a></li>
+                <li><a href="#experiencia" onclick="toggleMenu()">Habilidades</a></li>
+                <li><a href="#proyectos" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="perfil">
+            <div class="div-perfil-imagen">
+                <img src="./recursos/foto-perfil.png" alt="Foto de perfil">
+            </div>
+            <div class="div-primer-titulo">
+                <p class="div-text-p1">Hola, soy</p>
+                <h2 class="titulo">Jorge</h2>
+                <p class="div-text-p2">Desarrollador <span class="div-text-sub">Full-stack Junior</span></p>
+                <div class="btn-div">
+                    <button class="btn btn-color-1" onclick="abrirCV(), descargarCV()">Descargar CV</button>
+                    <button class="btn btn-color-2" onclick="contactar()">Contactar</button>
+                </div>
+
+                <div id="redes-sociales">
+                    <img src="./recursos/linkedin.png" alt="Linkedin personal" class="icono" onclick="linkedin()">
+                    <img src="./recursos/icono-github.png" alt="Github personal" class="icono" onclick="github()">
+                </div>
+            </div>
+
+        </section>
+        <section id="sobre-mi">
+            <p class="div-text-p2-sobre-mi">Cononoce más</p>
+            <h2 class="titulo-sobre-mi">Sobre mi</h2>
+            <p class="texto-debajo-card-sobre-mi">Soy Mihai Sile, Desarrollador Full-Stack Junior con una gran pasión por asumir nuevos retos y 
+                seguir creciendo personal y profesionalmente. Actualmente estoy trabajando en proyectos personales para fortalecer mi experiencia. 
+                Además de programar, me encanta relacionarme con las personas, ya que pienso que el conocimiento no solo se adquiere estudiando, 
+                sino también compartiendo y aprendiendo junto a los demás.</p>
+            </div>
+            <div class="sobre-mi-contenedor">
+                <div class="lista-sobre-mi">
+                    <div class="card-sobre-mi">
+                        <h1 class="titulo-sobre-mi">Datos académicos</h1>
+                        <img src="./recursos/icono-ies-venancio.png" alt="" class="icono-ies-venancio">
+                        <p class="div-text-p3-sobre-mi">IES Venancio Blanco</p>
+                        <p class="div-text-p3-sobre-mi">(FP Grado Superior)</p>
+                        <p class="div-text-p3-sobre-mi">Desarrollo de Aplicaciones Multiplataforma (DAM)</p>
+                        <p class="div-text-p2-sobre-mi">Septiembre 2023 - Diciembre 2025</p>
+                        <img src="./recursos/icono-ies-german.png" alt="" class="icono-ies-german">
+                        <p class="div-text-p3-sobre-mi">IES Germán Sánches Ruipérez</p>
+                        <p class="div-text-p3-sobre-mi">(FP Grado Medio)</p>
+                        <p class="div-text-p3-sobre-mi">Técnico de Sistemas Microinformáticos y Redes (SMR)</p>
+                        <p class="div-text-p2-sobre-mi">Septiembre 2019 - Julio 2021</p>
+                    </div>
+                    <div class="card-sobre-mi">
+                        <h1 class="titulo-sobre-mi">Experiencia laboral</h1>
+                        <img src="./recursos/icono-nttdata.png" alt="" class="icono-nttdata">
+                        <p class="div-text-p3-sobre-mi">NTT DATA Full-stack contrato de prácticas</p>
+                        <p class="div-text-p3-sobre-mi">NTT DATA Europe & Latam</p>
+                        <p class="div-text-p2-sobre-mi">Octubre 2025 - Diciembre 2025</p>
+                        <img src="./recursos/icono-aytop.png" alt="Iocno ayuntamiento" class="icono-ayuntamiento">
+                        <p class="div-text-p3-sobre-mi">Técnico informático contrato de prácticas</p>
+                        <p class="div-text-p3-sobre-mi">Ayuntamineto Peñaranda de Bracamonte</p>
+                        <p class="div-text-p2-sobre-mi">Octubre 2025 - Diciembre 2025</p>
+                        <img src="./recursos/education.png" alt="" class="icono-sobre-mi">
+                        <p class="div-text-p3-sobre-mi">En proceso de consolidar mi experiencia profesional.</p>
+                    </div>
+                </div>
+        </section>
+        <section id="experiencia">
+            <p class="div-text-p2-sobre-mi">Estas son mis</p>
+            <h2 class="titulo-habilidades">Hablidades Técnicas</h2>
+            <div class="lista-experiencia">
+                <div class="card-experiencia">
+                    <h1 class="titulo-sobre-mi">Frontend</h1>
+                    <div class="div-frontend">
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-css.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">CSS</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-html.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">HTML</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-javascript.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">JavaScript</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-typescript.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">TypeScript</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-angular.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Angular</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-en-proceso.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Más en proceso...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-experiencia">
+                    <h1 class="titulo-sobre-mi">Backend</h1>
+                    <div class="div-frontend">
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-java.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Java</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-spring-boot.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Spring Boot</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-hibernate.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Hibernate</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-python.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Python</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-django.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Django</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-odoo.png" alt="" class="icono-frontend-odoo">
+                            <p class="texto-experiencia-p1">Odoo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-experiencia">
+                    <h1 class="titulo-sobre-mi">Bases de datos</h1>
+                    <div class="div-frontend">
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-mysql.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">MySQL</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-mariadb.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">MariaDB</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-PostreSQL.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">PostgreSQL</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-mongodb.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">MongoDB</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-en-proceso.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Más en proceso...</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="card-experiencia">
+                    <h1 class="titulo-sobre-mi">Lenguajes de marcado</h1>
+                    <div class="div-frontend">
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-xml.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">XML</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-json.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">JSON</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-en-proceso.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Más en proceso...</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="card-experiencia">
+                    <h1 class="titulo-sobre-mi">Herramientas</h1>
+                    <div class="div-frontend">
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-git.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Git</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-github.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Github</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-docker.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Docker</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-powershell.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">PowerShell</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="card-experiencia">
+                    <h1 class="titulo-sobre-mi">Actualmente practicando</h1>
+                    <div class="div-frontend">
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-angular.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Angular</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-ionic.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Ionic</p>
+                        </div>
+                        <div class="div-frontend-skills">
+                            <img src="./recursos/icono-tauri.png" alt="" class="icono-frontend">
+                            <p class="texto-experiencia-p1">Tauri</p>
+                        </div>
+                    </div>
+                </div>  
+
+            </div>
+        </section>
+        <section id="proyectos">
+            <p class="div-text-p2-sobre-mi">Algunos de mis</p>
+            <h2 class="titulo-proyectos">Proyectos</h2>
+            <div class="lista-proyectos">
+                <div class="card-proyectos">
+                    <h1 class="titulo-sobre-mi">StreetFit (REST API)</h1>
+                    <img src="./recursos/logoappsinfondo.png" alt="Foto backend" class="img-backend" onclick="restapi()">
+                    <p class="texto-proyectos-p1">API REST desarrollada con Spring Boot que ofrece servicios 
+                        CRUD personalizados para la gestión de usuarios Atletas y Entrenadores. 
+                        El proyecto utiliza Hibernate/JPA para la creación y gestión de la base 
+                        de datos MySQL, y cuenta con un cliente Android desarrollado en Android 
+                        Studio con Java, que consume la API mediante Retrofit para la comunicación 
+                        cliente-servidor.</p>
+                    <div class="div-icono-github-proyecto">
+                    <img src="./recursos/icono-github.png" alt="Img proyecto " class="icono-frontend" onclick="restapi()">
+                    <a href="https://github.com/jorgems-dev/StreetFit" class="div-text-p1-enlaces-github">Repositorio de Github</a>
+                    </div>
+                </div>
+                <div class="card-proyectos">
+                    <h1 class="titulo-sobre-mi">StreetFit (Cliente)</h1>
+                    <img src="./recursos/foto-cliente-streetfit.png" alt="Foto backend" class="img-cliente" onclick="cliente()">
+                    <p class="texto-proyectos-p1">Este proyecto consiste en el desarrollo 
+                        de una aplicación móvil Android que actúa como cliente de una 
+                        REST API creada con Spring Boot, siguiendo una arquitectura 
+                        cliente-servidor clara y escalable.</p>
+                    <div class="div-icono-github-proyecto">
+                        <img src="./recursos/icono-github.png" alt="Img proyecto " class="icono-frontend" onclick="cliente()">
+                        <a href="https://github.com/jorgems-dev/Cliente-StreetFit" class="div-text-p1-enlaces-github">Repositorio de Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <p class="div-text-p2-sobre-mi">Formas de contactar conmigo</p>
+            <h2 class="titulo-contacto">Contacto</h2>
+            <div class="card-contacto">
+                <div class="div-contacto-info">
+                    <img src="./recursos/email.png" alt="" class="icono-contacto-gmail" onclick="gmail()">
+                    <p class="div-text-p2-contacto"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jorgemihai21@gmail.com" target="_blank" rel="noopener"">jorgemihai21@gmail.com</a></p>
+                </div>
+                <div class="div-contacto-info">
+                    <img src="./recursos/telefono.png" alt="" class="icono-contacto-telefono" onclick="telefono()">
+                    <p class="div-text-p2-contacto"><a href="tel:+34644959149" target="_blank" rel="noopener"">Teléfono</a></p>
+                </div>
+                <div class="div-contacto-info">
+                    <img src="./recursos/linkedin.png" alt="" class="icono-contacto" onclick="linkedin()">
+                    <p class="div-text-p2-contacto"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jorgemihai21@gmail.com" target="_blank" rel="noopener"" onclick="github()">LinkedIn</a></p>
+                </div>
+                <div class="div-contacto-info">
+                    <img src="./recursos/icono-github.png" alt="" class="icono-contacto" onclick="github()">
+                    <p class="div-text-p2-contacto"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jorgemihai21@gmail.com" target="_blank" rel="noopener"" onclick="github()">Github</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer-copyright">
+        <div class="div-footer">
+            <p class="div-text-p1-footer">Lenguajes empleados para el desarrollo</p>
+            <div class="div-footer-iconos">
+                <div class="div-footer-skills">
+                    <img src="./recursos/icono-html.png" alt="" class="icono-frontend">
+                    <p class="texto-text-p2-footer">HTML</p>
+                </div>
+                <div class="div-footer-skills">
+                    <img src="./recursos/icono-css.png" alt="" class="icono-frontend">
+                    <p class="texto-text-p2-footer">CSS</p>
+                </div>
+                <div class="div-footer-skills">
+                    <img src="./recursos/icono-javascript.png" alt="" class="icono-frontend">
+                    <p class="texto-text-p2-footer">JS</p>
+                </div>
+            </div>    
+            <p class="div-text-p2-footer">©2026 Jorgems-dev</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
