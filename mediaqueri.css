@@ -30,7 +30,7 @@
 @media screen and (max-width: 600px) {
 
   section {
-    scroll-margin-top: 50px; 
+    scroll-margin-top: 12vh; 
   }
 
   #perfil {

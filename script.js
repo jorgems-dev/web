@@ -12,7 +12,7 @@ function irA(selector) {
     icon.classList.remove("open")
 
     const section = document.querySelector(selector)
-    const topOffset = 70 // altura aproximada del menú móvil
+    const topOffset = 70 
     const elementPosition = section.getBoundingClientRect().top
     const offsetPosition = elementPosition + window.pageYOffset - topOffset
 
