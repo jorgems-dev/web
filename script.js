@@ -42,10 +42,6 @@ function github() {
     location.href = "https://github.com/jorgems-dev"
 }
 
-function gmail() {
-    location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=jorgemihai21@gmail.com"
-}
-
 function telefono() {
     location.href = "tel:+34644959149"
 }
