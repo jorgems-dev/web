@@ -3,13 +3,16 @@ function toggleMenu() {
   menu.classList.toggle("open");
 }
 
-document.querySelectorAll(".menu-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    const menu = document.querySelector(".menu-links");
+document.querySelectorAll('.menu-links a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+
+    toggleMenu(); // cierra menú
 
     setTimeout(() => {
-      menu.classList.remove("open");
-    }, 0);
+      target.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
   });
 });
 
