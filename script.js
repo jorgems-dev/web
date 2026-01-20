@@ -16,8 +16,6 @@ document.querySelectorAll('.menu-links a').forEach(link => {
   });
 });
 
-
-
 function abrirCV() {
     window.open("recursos/CVMihaiSilePavelAsiminei2026.pdf", "_blank")
 }
@@ -76,8 +74,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach(section => observer.observe(section));
 });
-
-
-
-
-
