@@ -1,30 +1,45 @@
-const icono = document.querySelector('.icono-desplegable');
-const menu = document.querySelector('.menu-links');
+document.addEventListener("DOMContentLoaded", () => {
+  const icono = document.querySelector('.icono-desplegable');
+  const menu = document.querySelector(".menu-links");
 
-document.querySelectorAll('.menu-links a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute('href'));
-    
-    toggleMenu(); // cierra menú
-    
-    setTimeout(() => {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }, 50);
+  icono.addEventListener("click", () => {
+    icono.classList.toggle("open");
+    menu.classList.toggle("open");
+  });
+
+  document.querySelectorAll('.menu-links a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      
+      icono.classList.remove("open");
+      menu.classList.remove("open");
+
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
+    });
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
 
-icono.addEventListener('click', () => {
-  icono.classList.toggle('open');
-  menu.classList.toggle('open');
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); 
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  sections.forEach(section => observer.observe(section));
 });
 
-
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  menu.classList.toggle("open");
-}
 function abrirCV() {
     window.open("recursos/CVMihaiSilePavelAsiminei2026.pdf", "_blank")
 }
@@ -61,21 +76,3 @@ function restapi() {
 function cliente() {
     location.href = "https://github.com/jorgems-dev/Cliente-StreetFit";
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target); 
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
-
-  sections.forEach(section => observer.observe(section));
-});
