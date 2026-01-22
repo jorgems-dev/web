@@ -1,21 +1,30 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  menu.classList.toggle("open");
-}
+const icono = document.querySelector('.icono-desplegable');
+const menu = document.querySelector('.menu-links');
 
 document.querySelectorAll('.menu-links a').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute('href'));
-
+    
     toggleMenu(); // cierra menú
-
+    
     setTimeout(() => {
       target.scrollIntoView({ behavior: 'smooth' });
     }, 50);
   });
 });
 
+
+icono.addEventListener('click', () => {
+  icono.classList.toggle('open');
+  menu.classList.toggle('open');
+});
+
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  menu.classList.toggle("open");
+}
 function abrirCV() {
     window.open("recursos/CVMihaiSilePavelAsiminei2026.pdf", "_blank")
 }
