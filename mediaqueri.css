@@ -155,6 +155,8 @@
 
   .card-experiencia {
     width: 100%;
+    gap: 0;
+    margin: 0 auto;
   }
 
   .div-frontend {

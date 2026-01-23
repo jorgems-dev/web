@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 /* General */
 * {
   margin: 0;
@@ -376,17 +375,18 @@ section.visible {
 
 .lista-sobre-mi {
   display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 2rem;
-  align-items: stretch;
   justify-content: center;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(2, 1fr); 
-
+  place-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card-sobre-mi {        
   display: flex;
-  width: 90%;
+  width: 100%;
   min-height: 150px;
   border-radius: 50px;
   background: white;
@@ -398,7 +398,7 @@ section.visible {
   align-items: center;
   justify-content: flex-start;
   transition: all 0.3s ease-in-out;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .texto-debajo-card-sobre-mi {
@@ -478,19 +478,23 @@ section.visible {
 
 .lista-experiencia {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .card-experiencia {
   display: flex;
-  width: 90%;
+  width: 100%;
   min-height: 150px;
   border-radius: 50px;
   background: white;
   border: rgb(53, 53, 53) 0.1rem solid;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  padding: 1rem;
+  padding: 0.5rem;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
@@ -507,9 +511,9 @@ section.visible {
   text-align: center;
 }
 
-.div-frontend {
+.div-skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%;
   flex-direction: column;
@@ -559,7 +563,7 @@ section.visible {
 
 .card-proyectos {
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 100%;
   min-height: 150px;
   border-radius: 50px;
@@ -605,8 +609,12 @@ section.visible {
 
 .lista-proyectos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .texto-proyectos-p1 {
