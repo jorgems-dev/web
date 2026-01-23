@@ -371,6 +371,7 @@ section.visible {
   position: relative;
   font-size: 2rem;
   text-align: center;
+  margin: 2rem;
 }
 
 .lista-sobre-mi {
@@ -397,7 +398,7 @@ section.visible {
   align-items: center;
   justify-content: flex-start;
   transition: all 0.3s ease-in-out;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .texto-debajo-card-sobre-mi {
