@@ -373,6 +373,14 @@ section.visible {
   margin: 2rem;
 }
 
+.titulo-sobre-mi-principal {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
 .lista-sobre-mi {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -384,7 +392,7 @@ section.visible {
   margin: 0 auto;
 }
 
-.card-sobre-mi {        
+/* .card-sobre-mi {        
   display: flex;
   width: 100%;
   min-height: 150px;
@@ -394,11 +402,97 @@ section.visible {
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   transition: all 0.3s ease-in-out;
   margin: 0 auto;
+} */
+.card-sobre-mi {
+  background-color: white; 
+  color: #e5e7eb; 
+  border-radius: 20px;
+  border: rgb(53, 53, 53) 0.05rem solid;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+  font-family: sans-serif;
+}
+
+.card-encabezado {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card-encabezado p{
+  font-weight: 500;
+  color: black;
+}
+.card-titulo-encabezado {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.degree-level {
+  color: #0ea5e9; 
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.institucion {
+  font-weight: 600;
+  margin: 5px 0;
+  color: black;
+}
+
+.program {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  background-color: rgba(14, 165, 233, 0.2); 
+  color: #0ea5e9;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.lenguajes{
+  background-color: rgba(30, 255, 0, 0.2); 
+  color: #00af17;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.sistemas-operativos{
+  background-color: rgba(255, 221, 51, 0.5);
+  color: #bfa900; 
+  padding: 5px 15px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
 .texto-debajo-card-sobre-mi {
@@ -421,8 +515,8 @@ section.visible {
 }
 
 .div-text-p2-sobre-mi {
-  text-align: center;
-  font-size: 1.50rem;
+  color: black;
+  font-size: 1rem;
 }
 
 .div-text-p3-sobre-mi {
@@ -619,7 +713,7 @@ section.visible {
 
 .texto-proyectos-p1 {
   text-align: center;      
-  font-size: 1.25rem;       
+  font-size: 1.40rem;       
   color: black;              
   max-width: 800px;              
 }

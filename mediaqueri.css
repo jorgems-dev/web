@@ -123,17 +123,35 @@
   .lista-sobre-mi {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 1.5rem;
   }
 
   .titulo-sobre-mi {
-    margin: 1rem auto;
+    margin-top: 4rem;
+  }
+
+  .titulo-sobre-mi-principal {
+    margin: 0 auto;
   }
 
   .card-sobre-mi {
     width: 100%;
     padding: 1.5rem;
   }
+
+ .card-titulo-encabezado {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+ .card-titulo-encabezado p{
+  font-weight: 500;
+  text-align: center; /* Alinea el texto a la izquierda */
+  font-size: 0.8rem;
+  margin: 0;
+ }
 
   .texto-debajo-card-sobre-mi {
     font-size: 1.1rem;
@@ -143,20 +161,29 @@
   .div-text-p1-sobre-mi {
     font-size: 1.5rem;
   }
+  .div-text-p2-sobre-mi {
+    font-size: 0.8rem;
+  }
   .div-text-p3-sobre-mi {
     font-size: 1rem;
+  }
+  .institucion {
+    font-size: 0.5;
   }
 
   .lista-experiencia {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
+    gap: 0;
   }
 
   .card-experiencia {
+    display: flex;
     width: 100%;
-    gap: 0;
-    margin: 0 auto;
+    margin: 1 auto;
+    padding: 2rem;
   }
 
   .div-frontend {
@@ -172,6 +199,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0;
   }
 
   .img-backend {
