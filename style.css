@@ -392,27 +392,10 @@ section.visible {
   margin: 0 auto;
 }
 
-/* .card-sobre-mi {        
-  display: flex;
-  width: 100%;
-  min-height: 150px;
-  border-radius: 50px;
-  background: white;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  padding: 2rem;
-  box-sizing: border-box;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  transition: all 0.3s ease-in-out;
-  margin: 0 auto;
-} */
 .card-sobre-mi {
   background-color: white; 
   color: #e5e7eb; 
   border-radius: 20px;
-  border: rgb(53, 53, 53) 0.1rem solid;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   width: 100%;
@@ -435,7 +418,8 @@ section.visible {
 }
 .card-titulo-encabezado {
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
@@ -515,7 +499,7 @@ section.visible {
 }
 
 .div-text-p2-sobre-mi {
-  color: black;
+  color: rgb(130, 130, 130);
   font-size: 1rem;
 }
 
@@ -586,7 +570,7 @@ section.visible {
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  /* border: rgb(53, 53, 53) 0.1rem solid; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -662,7 +646,7 @@ section.visible {
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  /* border: rgb(53, 53, 53) 0.1rem solid; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
@@ -770,9 +754,9 @@ section.visible {
 }
 
 #contacto {
-  margin: 4rem;
+  margin: 0 auto;
   text-align: center;
-  min-height: 80vh;
+  min-height: 65vh;
 }
 
 .titulo-contacto {
@@ -789,7 +773,7 @@ section.visible {
   height: auto;
   border-radius: 50px;
   background: white;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  /* border: rgb(53, 53, 53) 0.1rem solid; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
