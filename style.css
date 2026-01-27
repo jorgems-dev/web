@@ -509,11 +509,11 @@ section.visible {
   font-size: 1.50rem;
 }
 
-.card-sobre-mi:hover {    
-  transform: scale(1.05);
-  box-shadow: 15px 15px 50px #bebebe, -15px -15px 50px #ffffff;
+.card-sobre-mi:hover {
+  transform: scale(1.03);
+  outline: 2px solid rgb(53, 53, 53);
+  outline-offset: -2px;
 }
-
 
 .icono-sobre-mi{
   cursor: default;
@@ -654,6 +654,12 @@ section.visible {
   justify-content: flex-start;
   transition: all 0.3s ease-in-out;
   margin: 2rem auto;
+}
+
+.card-proyectos:hover {
+  transform: scale(1.03);
+  outline: 2px solid rgb(53, 53, 53);
+  outline-offset: -2px;
 }
 
 .img-backend {
