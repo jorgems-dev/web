@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-/* General */
 * {
   margin: 0;
   padding: 0;
@@ -450,7 +449,7 @@ section.visible {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
+  margin: 2rem auto;
 }
 
 .badge {
@@ -569,7 +568,6 @@ section.visible {
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  /* border: rgb(53, 53, 53) 0.1rem solid; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -631,7 +629,6 @@ section.visible {
   color: black;              
 }
 
-
 #proyectos{
   text-align: center;
   margin-bottom: 10vh;
@@ -645,7 +642,6 @@ section.visible {
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  /* border: rgb(53, 53, 53) 0.1rem solid; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
@@ -779,7 +775,6 @@ section.visible {
   height: auto;
   border-radius: 50px;
   background: white;
-  /* border: rgb(53, 53, 53) 0.1rem solid; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
