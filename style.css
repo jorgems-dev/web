@@ -521,6 +521,7 @@ section.visible {
   color: rgb(130, 130, 130);
   text-align: left;
   font-size: 0.7rem;
+  margin-top: auto;
 }
 
 .card-sobre-mi:hover {
