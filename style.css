@@ -17,10 +17,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   --color: #E1E1E1;
-  background-color: #F3F3F3;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-  background-size: 55px 55px;
+
 }
 
 body {
@@ -289,7 +286,7 @@ section.visible {
 
 .icono {
   cursor: pointer;
-  height: 3rem;
+  height: 2rem;
   transition: all 0.3s ease-in-out;
 
 }
@@ -383,22 +380,27 @@ section.visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 2rem;
+  flex-wrap: wrap;
   justify-content: center;
   place-items: center;
   width: 100%;
+  flex-direction: row;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .card-sobre-mi {
+  display: flex;
   background-color: white; 
   color: #e5e7eb; 
   border-radius: 20px;
-  box-shadow: 5px 5px 60px #bebebe, -20px -20px 60px #ffffff;
-  padding: 2rem;
+  border: #bebebe 2px solid;
+  box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
+  padding: 1rem;
   width: 100%;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   justify-content: flex-start;
   transition: all 0.3s ease-in-out;
   font-family: sans-serif;
@@ -416,22 +418,24 @@ section.visible {
 }
 .card-titulo-encabezado {
   display: flex;
-  align-items: start;
-  flex-direction: column;
-  margin-bottom: 15px;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
 }
 
 .card-logo {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: white;
 }
 
 .degree-level {
-  color: #0ea5e9; 
+  color: black;
   font-weight: bold;
-  margin-right: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .institucion {
@@ -448,8 +452,8 @@ section.visible {
 .card-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 2rem auto;
+  gap: 5px;
+  margin: 1rem auto;
 }
 
 .badge {
@@ -477,41 +481,50 @@ section.visible {
   white-space: nowrap;
 }
 
+.div-h {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icono-prueba {
+  height: 30px;
+  margin: 1rem;
+}
+
 .texto-debajo-card-sobre-mi {
   color: black;
   font-size: 1.2rem;
   font-weight: 400;
   flex-basis: 100%;
   width: 100%;
-  text-align: center;
+  text-align: justify;
   max-width: 800px;
   margin-bottom: 2rem;
 
 }
 
 .div-text-p1-sobre-mi {
-  font-weight: 600;
   color: black;
-  text-align: center;
-  font-size: 1.75rem;
-}
-
-.div-text-p2-sobre-mi {
-  color: rgb(130, 130, 130);
   font-size: 1rem;
 }
 
+.div-text-p2-sobre-mi {
+  color: black;
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+
 .div-text-p3-sobre-mi {
-  font-weight: 600;
-  color: #000;
-  text-align: center;
-  font-size: 1.50rem;
+  color: rgb(130, 130, 130);
+  text-align: left;
+  font-size: 0.7rem;
 }
 
 .card-sobre-mi:hover {
   transform: scale(1.03);
-  outline: 2px solid rgb(53, 53, 53);
-  outline-offset: -2px;
 }
 
 .icono-sobre-mi{
@@ -568,7 +581,8 @@ section.visible {
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: #bebebe 2px solid;
+  box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
   padding: 0.5rem;
   box-sizing: border-box;
   flex-direction: column;
@@ -578,6 +592,10 @@ section.visible {
   margin: 2rem auto;
 }
 
+.titulo-experiencia {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
 
 .titulo-habilidades {
   display: inline-block;
@@ -616,7 +634,7 @@ section.visible {
 }
 
 .icono-frontend-odoo{
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   cursor: default;
   height: 2rem;
   transition: all 0.3s ease-in-out;
@@ -636,26 +654,26 @@ section.visible {
 }
 
 .card-proyectos {
+  cursor: pointer;
   display: flex;
   width: 100%;
   height: 100%;
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: #bebebe 2px solid;
+  box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   transition: all 0.3s ease-in-out;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .card-proyectos:hover {
   transform: scale(1.03);
-  outline: 2px solid rgb(53, 53, 53);
-  outline-offset: -2px;
 }
 
 .img-backend {
@@ -671,21 +689,17 @@ section.visible {
   object-fit: cover; 
   margin: 2rem auto;
   height: 9.5rem;
-  transition: all 0.3s ease-in-out;
 }
 
-.img-backend:hover, .img-cliente:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-
-}
 
 .titulo-proyectos {
   display: inline-block;
   position: relative;
   font-size: 2rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
+
 
 .lista-proyectos {
   display: grid;
@@ -698,8 +712,8 @@ section.visible {
 }
 
 .texto-proyectos-p1 {
-  text-align: center;      
-  font-size: 1.40rem;       
+  text-align: justify;   
+  font-size: 1rem;       
   color: black;              
   max-width: 800px;              
 }
@@ -775,7 +789,8 @@ section.visible {
   height: auto;
   border-radius: 50px;
   background: white;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: #bebebe 2px solid;
+  box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
   flex-direction: row;
@@ -836,7 +851,7 @@ section.visible {
 }
 
 footer {
-  padding: 3rem 0;
+  padding: 2rem;
 }
 
 footer p {
@@ -849,7 +864,7 @@ footer p {
   align-items: center;
   width: 100%;
   background: white;              
-  box-shadow: 0 -10px 20px rgba(0,0,0,0.15); 
+  box-shadow: 0 -10px 5px rgba(0,0,0,0.15); 
   font-size: 1.2rem;              
   font-weight: 600;              
   position: relative;              
@@ -865,7 +880,7 @@ footer p {
 
 .div-text-p1-footer {
   text-align: center;
-  font-size: 1.40rem;
+  font-size: 1rem;
 }
 .div-text-p2-footer {
   text-align: center;

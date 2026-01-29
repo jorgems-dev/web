@@ -179,10 +179,6 @@
     font-size: 1rem;
   }
 
-  .card-proyectos {
-    border: none;
-  }
-
   .lista-experiencia {
     display: flex;
     flex-direction: column;
@@ -192,11 +188,9 @@
   }
 
   .card-experiencia {
-    border: none;
     display: flex;
     width: 100%;
-    margin: 1 auto;
-    padding: 2rem;
+    margin: 1rem auto;
   }
 
   .div-frontend {
@@ -228,7 +222,7 @@
   .texto-proyectos-p1 {
     font-weight: 500;
     font-size: 0.8rem;
-    text-align: center;
+    text-align: justify;
   }
 
   .div-icono-github-proyecto a{
