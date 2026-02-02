@@ -44,9 +44,6 @@
     </nav>
     <main>
         <section id="perfil">
-            <div class="div-perfil-imagen">
-                <img src="./recursos/foto-perfil.png" alt="Foto de perfil">
-            </div>
             <div class="div-primer-titulo">
                 <p class="div-text-p1">Hola, soy</p>
                 <h2 class="titulo">Jorge</h2>
@@ -55,11 +52,13 @@
                     <button class="btn btn-color-1" onclick="abrirCV(), descargarCV()">Descargar CV</button>
                     <button class="btn btn-color-2" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });">Contactar</button>
                 </div>
-
                 <div id="redes-sociales">
                     <img src="./recursos/linkedin.png" alt="Linkedin personal" class="icono" onclick="linkedin()">
                     <img src="./recursos/icono-github.png" alt="Github personal" class="icono" onclick="github()">
                 </div>
+            </div>
+            <div class="div-perfil-imagen">
+                <img src="./recursos/foto-perfil.png" alt="Foto de perfil">
             </div>
         </section>
         <section id="sobre-mi">
@@ -153,7 +152,6 @@
                             <span class="sistemas">GitHub</span>
                             <span class="sistemas">SonarQube</span>
                         </div>
-
                         <h1 class="div-text-p3-sobre-mi">Oct 2025 - Dic 2025</h1>
                     </div>
                     <div class="card-sobre-mi">

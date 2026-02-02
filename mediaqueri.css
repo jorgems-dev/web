@@ -44,7 +44,9 @@
   }
   
   .div-perfil-imagen {
-    display: none;
+    width: 200px;
+    height: 200px;
+    order: -1;
   }
 
   .div-text-sub {
