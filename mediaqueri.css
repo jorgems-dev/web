@@ -122,11 +122,17 @@
     width: 8rem;
   }
 
+  #sobre-mi {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
   .lista-sobre-mi {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1.5rem;
+    margin: 0 auto;
   }
 
   .titulo-sobre-mi {
@@ -139,7 +145,23 @@
 
   .card-sobre-mi {
     width: 100%;
-    padding: 1.5rem;
+  }
+
+  .sobre-mi-foto {
+    display: none;
+    margin: 0 auto;
+  }
+
+.sobre-mi-flex {
+  display: flex;
+  gap: 3rem;
+}
+
+.sobre-mi-contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
   }
 
  .card-titulo-encabezado {

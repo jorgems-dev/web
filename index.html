@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="mediaqueri.css">
 
 </head>
+
 <body>
     <nav id="nav-principal">
         <div class="nombre">
@@ -50,7 +52,8 @@
                 <p class="div-text-p2">Desarrollador <span class="div-text-sub">Full-stack</span></p>
                 <div class="btn-div">
                     <button class="btn btn-color-1" onclick="abrirCV(), descargarCV()">Descargar CV</button>
-                    <button class="btn btn-color-2" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });">Contactar</button>
+                    <button class="btn btn-color-2"
+                        onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });">Contactar</button>
                 </div>
                 <div id="redes-sociales">
                     <img src="./recursos/linkedin.png" alt="Linkedin personal" class="icono" onclick="linkedin()">
@@ -66,116 +69,120 @@
             <h2 class="titulo-sobre-mi-principal">Sobre mi</h2>
             <p class="texto-debajo-card-sobre-mi">
                 Soy un desarrollador Junior Backend / Full-Stack con formación en
-                Java (Spring Boot), Angular y bases de datos relacionales. Me gusta crear estructuras de proyectos claras, cuidando en todo momento la limpieza de código y buenas prácticas.
+                Java (Spring Boot), Angular y bases de datos relacionales. Me gusta crear estructuras de proyectos
+                claras, cuidando en todo momento la limpieza de código y buenas prácticas.
             </p>
-            <div class="sobre-mi-contenedor">
-                <h1 class="titulo-sobre-mi">Datos académicos</h1>
-                    <div class="lista-sobre-mi">
-                        <div class="card-sobre-mi">
-                            <div class="card-encabezado">
-                                <img src="./recursos/icono-ies-venancio.png" alt="Instituto Logo" class="card-logo">
-                                <h2 class="institucion">IES Venancio Blanco</h2>
-                            </div>
-                            <div class="message-text-container">
-                                <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
-                                <div>
-                                    <p class="message-text">FP Grado Superior</p>
-                                    <p class="sub-text">Desarrollo de Aplicaicones Multiplataforma</p>
-                                </div>
-                            </div>
-                            <div class="card-badges">
-                                <span class="lenguajes">Java</span>
-                                <span class="lenguajes">Python</span>
-                                <span class="lenguajes">C</span>
-                                <span class="lenguajes">CSS3</span>
-                                <span class="lenguajes">HTML5</span>
-                                <span class="lenguajes">XML</span>
-                                <span class="badge">MySQL</span>
-                                <span class="badge">PostgreSQL</span>
-                                <span class="badge">MariaDB</span>
-                                <span class="badge">MongoDB</span>
-                                <span class="sistemas">Git</span>                                
-                                <span class="sistemas">GitHub</span>                                
-                                <span class="sistemas">PoweShell</span>                                
-                            </div>
-                            <h1 class="div-text-p3-sobre-mi">Sept 2023 - Dic 2025</h1>
-                        </div>
-                        <div class="card-sobre-mi">
-                            <div class="card-encabezado">
-                                <img src="./recursos/icono-ies-german.png" alt="Instituto Logo" class="card-logo">
-                                <h2 class="institucion">IES Germán Sánchez Ruipérez</h2>
-                            </div>
-                            <div class="message-text-container">
-                                <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
-                                <div>
-                                    <p class="message-text">FP Grado Medio</p>
-                                    <p class="sub-text">Técnico de Sistemas Microinformáticos y Redes</p>
-                                </div>
-                            </div>
-                            <div class="card-badges">
-                                <span class="lenguajes">CSS3</span>
-                                <span class="lenguajes">HTML5</span>                                
-                                <span class="badge">Montaje/Mantenimiento</span>
-                                <span class="badge">Seguridad informática (básica)</span>
-                                <span class="badge">Gestión de redes</span>
-                                <span class="sistemas">Linux</span>                                
-                                <span class="sistemas">Windows</span>    
-                                <span class="sistemas">PoweShell</span>                                
-                            </div>
-                            <h1 class="div-text-p3-sobre-mi">Sept 2019 - Dic 2021</h1>
-                        </div>
-                    </div>
+            <div class="sobre-mi-flex">
+                <div class="sobre-mi-foto">
+                    <img src="./recursos/sobre-mi-foto.png" alt="">
                 </div>
-                <h1 class="titulo-sobre-mi">Experiencia laboral</h1>
-                <div class="lista-sobre-mi">
-                    <div class="card-sobre-mi">
-                        <div class="card-encabezado">
-                            <img src="./recursos/icono-nttdata.png" alt="Instituto Logo" class="card-logo">
-                            <h2 class="institucion">NTT DATA Europe & Latam</h2>
+                <div>
+                    <div class="sobre-mi-contenedor">
+                        <h1 class="titulo-sobre-mi-h1">Datos Academicos</h1>
+                        <div class="lista-sobre-mi">
+                            <div class="card-sobre-mi">
+                                <div class="card-encabezado">
+                                    <img src="./recursos/icono-ies-venancio.png" alt="Instituto Logo" class="card-logo">
+                                    <h2 class="institucion">IES Venancio Blanco</h2>
+                                </div>
+                                <div class="message-text-container">
+                                    <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
+                                    <div>
+                                        <p class="message-text">FP Grado Superior</p>
+                                        <p class="sub-text">Desarrollo de Aplicaicones Multiplataforma</p>
+                                    </div>
+                                </div>
+                                <div class="card-badges">
+                                    <span class="lenguajes">Java</span>
+                                    <span class="lenguajes">Python</span>
+                                    <span class="lenguajes">C</span>
+                                    <span class="lenguajes">CSS3</span>
+                                    <span class="lenguajes">HTML5</span>
+                                    <span class="lenguajes">XML</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">PostgreSQL</span>
+                                    <span class="badge">MariaDB</span>
+                                    <span class="badge">MongoDB</span>
+                                    <span class="sistemas">Git</span>
+                                    <span class="sistemas">GitHub</span>
+                                    <span class="sistemas">PoweShell</span>
+                                </div>
+                                <h1 class="div-text-p3-sobre-mi">Sept 2023 - Dic 2025</h1>
+                            </div>
+                            <div class="card-sobre-mi">
+                                <div class="card-encabezado">
+                                    <img src="./recursos/icono-ies-german.png" alt="Instituto Logo" class="card-logo">
+                                    <h2 class="institucion">IES Germán Sánchez Ruipérez</h2>
+                                </div>
+                                <div class="message-text-container">
+                                    <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
+                                    <div>
+                                        <p class="message-text">FP Grado Medio</p>
+                                        <p class="sub-text">Técnico de Sistemas Microinformáticos y Redes</p>
+                                    </div>
+                                </div>
+                                <div class="card-badges">
+                                    <span class="lenguajes">CSS3</span>
+                                    <span class="lenguajes">HTML5</span>
+                                    <span class="badge">Montaje/Mantenimiento</span>
+                                    <span class="badge">Seguridad informática (básica)</span>
+                                    <span class="badge">Gestión de redes</span>
+                                    <span class="sistemas">Linux</span>
+                                    <span class="sistemas">Windows</span>
+                                    <span class="sistemas">PoweShell</span>
+                                </div>
+                                <h1 class="div-text-p3-sobre-mi">Sept 2019 - Dic 2021</h1>
+                            </div>
                         </div>
-                        <div class="div-h">
-                            <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
-                            <h1 class="sub-text">Desarrollador Full-Stack | Becario</h1>
+                        <h1 class="titulo-sobre-mi-h1">Experiencia Laboral</h1>
+                        <div class="lista-sobre-mi">
+                            <div class="card-sobre-mi">
+                                <div class="card-encabezado">
+                                    <img src="./recursos/icono-nttdata.png" alt="Instituto Logo" class="card-logo">
+                                    <h2 class="institucion">NTT DATA Europe & Latam</h2>
+                                </div>
+                                <div class="div-h">
+                                    <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
+                                    <h1 class="sub-text">Desarrollador Full-Stack | Becario</h1>
+                                </div>
+                                <div class="card-badges">
+                                    <span class="lenguajes">Java</span>
+                                    <span class="lenguajes">Hibernate</span>
+                                    <span class="lenguajes">Spring Boot</span>
+                                    <span class="lenguajes">Angular</span>
+                                    <span class="lenguajes">JavaScript</span>
+                                    <span class="lenguajes">TypeScript</span>
+                                    <span class="lenguajes">CSS3</span>
+                                    <span class="lenguajes">HTML5</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">PostgreSQL</span>
+                                    <span class="sistemas">Git</span>
+                                    <span class="sistemas">GitHub</span>
+                                    <span class="sistemas">SonarQube</span>
+                                </div>
+                                <h1 class="div-text-p3-sobre-mi">Oct 2025 - Dic 2025</h1>
+                            </div>
+                            <div class="card-sobre-mi">
+                                <div class="card-encabezado">
+                                    <img src="./recursos/icono-aytop.png" alt="Instituto Logo" class="card-logo">
+                                    <h2 class="institucion">Ayuntamiento de Peñaranda de Bracamonte</h2>
+                                </div>
+                                <div class="div-h">
+                                    <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
+                                    <h1 class="sub-text">Técnico de sistemas | Becario</h1>
+                                </div>
+                                <div class="card-badges">
+                                    <span class="lenguajes">Python</span>
+                                    <span class="badge">Montaje/Mantenimiento</span>
+                                    <span class="badge">Seguridad informática (básica)</span>
+                                    <span class="badge">Gestión de redes</span>
+                                    <span class="sistemas">Linux</span>
+                                </div>
+
+                                <h1 class="div-text-p3-sobre-mi">Sept 2021 - Dic 2021</h1>
+                            </div>
                         </div>
-                        <div class="card-badges">
-                            <span class="lenguajes">Java</span>
-                            <span class="lenguajes">Hibernate</span>
-                            <span class="lenguajes">Spring Boot</span>
-                            <span class="lenguajes">Angular</span>
-                            <span class="lenguajes">JavaScript</span>
-                            <span class="lenguajes">TypeScript</span>
-                            <span class="lenguajes">CSS3</span>
-                            <span class="lenguajes">HTML5</span>
-                            <span class="badge">MySQL</span>
-                            <span class="badge">PostgreSQL</span>
-                            <span class="sistemas">Git</span>
-                            <span class="sistemas">GitHub</span>
-                            <span class="sistemas">SonarQube</span>
-                        </div>
-                        <h1 class="div-text-p3-sobre-mi">Oct 2025 - Dic 2025</h1>
                     </div>
-                    <div class="card-sobre-mi">
-                        <div class="card-encabezado">
-                            <img src="./recursos/icono-aytop.png" alt="Instituto Logo" class="card-logo">
-                            <h2 class="institucion">Ayuntamiento de Peñaranda de Bracamonte</h2>
-                        </div>
-
-                        <div class="div-h">
-                            <img src="./recursos/checkmark.png" alt="" class="icono-prueba">
-                            <h1 class="sub-text">Técnico de sistemas | Becario</h1>
-                        </div>
-
-                        <div class="card-badges">
-                            <span class="lenguajes">Python</span>
-                            <span class="badge">Montaje/Mantenimiento</span>
-                            <span class="badge">Seguridad informática (básica)</span>
-                            <span class="badge">Gestión de redes</span>
-                            <span class="sistemas">Linux</span>
-                        </div>
-
-                        <h1 class="div-text-p3-sobre-mi">Sept 2021 - Dic 2021</h1>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -261,7 +268,7 @@
                             <p class="texto-experiencia-p1">MongoDB</p>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="card-experiencia">
                     <h1 class="titulo-experiencia">Lenguajes de marcado</h1>
                     <div class="div-skills">
@@ -274,7 +281,7 @@
                             <p class="texto-experiencia-p1">JSON</p>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="card-experiencia">
                     <h1 class="titulo-experiencia">Herramientas</h1>
                     <div class="div-skills">
@@ -295,7 +302,7 @@
                             <p class="texto-experiencia-p1">PowerShell</p>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="card-experiencia">
                     <h1 class="titulo-experiencia">Actualmente practicando</h1>
                     <div class="div-skills">
@@ -312,8 +319,7 @@
                             <p class="texto-experiencia-p1">Tauri</p>
                         </div>
                     </div>
-                </div>  
-
+                </div>
             </div>
         </section>
         <section id="proyectos">
@@ -322,45 +328,53 @@
             <div class="lista-proyectos">
                 <div class="card-proyectos" onclick="restapi()">
                     <h1 class="titulo-proyectos">StreetFit (REST API)</h1>
-                    <img src="./recursos/logoappsinfondo.png" alt="Foto backend" class="img-backend" onclick="restapi()">
+                    <img src="./recursos/logoappsinfondo.png" alt="Foto backend" class="img-backend"
+                        onclick="restapi()">
                     <div class="card-badges">
                         <span class="lenguajes">Java</span>
                         <span class="lenguajes">MySQL</span>
-                        <span class="badge">Spring Boot</span>                                                         
-                        <span class="badge">Hibernate</span>                                                         
-                        <span class="sistemas">Apache Tomcat embebido</span>   
-                        <span class="sistemas">Maven</span>   
+                        <span class="badge">Spring Boot</span>
+                        <span class="badge">Hibernate</span>
+                        <span class="sistemas">Apache Tomcat embebido</span>
+                        <span class="sistemas">Maven</span>
                     </div>
-                    <p class="texto-proyectos-p1">StreetFit es una API REST desarrollada con Spring Boot que proporciona 
-                        servicios CRUD personalizados para gestionar usuarios de tipo Atletas y 
-                        Entrenadores. El backend está hecho en Java usando Spring Boot y Hibernate/JPA 
-                        para interactuar con una base de datos MySQL. Además, el proyecto incluye un cliente 
-                        Android desarrollado en Android Studio con Java, que consume la API mediante Retrofit 
+                    <p class="texto-proyectos-p1">StreetFit es una API REST desarrollada con Spring Boot que proporciona
+                        servicios CRUD personalizados para gestionar usuarios de tipo Atletas y
+                        Entrenadores. El backend está hecho en Java usando Spring Boot y Hibernate/JPA
+                        para interactuar con una base de datos MySQL. Además, el proyecto incluye un cliente
+                        Android desarrollado en Android Studio con Java, que consume la API mediante Retrofit
                         para la comunicación entre la app y el servidor</p>
                     <div class="div-icono-github-proyecto">
-                    <img src="./recursos/icono-github.png" alt="Img proyecto " class="icono-frontend" onclick="restapi()">
-                    <a href="https://github.com/jorgems-dev/StreetFit" class="div-text-p1-enlaces-github">Repositorio de Github</a>
+                        <img src="./recursos/icono-github.png" alt="Img proyecto " class="icono-frontend"
+                            onclick="restapi()">
+                        <a href="https://github.com/jorgems-dev/StreetFit"
+                            class="div-text-p1-enlaces-github">Repositorio de Github</a>
                     </div>
                 </div>
                 <div class="card-proyectos" onclick="cliente()">
                     <h1 class="titulo-proyectos">StreetFit (Cliente)</h1>
-                    <img src="./recursos/foto-cliente-streetfit.png" alt="Foto backend" class="img-cliente" onclick="cliente()">
+                    <img src="./recursos/foto-cliente-streetfit.png" alt="Foto backend" class="img-cliente"
+                        onclick="cliente()">
                     <div class="card-badges">
                         <span class="lenguajes">Java</span>
-                        <span class="lenguajes">XML</span>                                                         
+                        <span class="lenguajes">XML</span>
                         <span class="badge">Retrofit</span>
                     </div>
                     <p class="texto-proyectos-p1">
-                        Cliente-StreetFit es una aplicación móvil Android desarrollada con Android Studio que funciona 
-                        como cliente REST para consumir una API backend construida con Spring Boot. Esta app se comunica 
-                        con la API usando Retrofit, una librería que facilita las peticiones HTTP y la conversión de JSON a 
-                        objetos Java de forma eficiente. La aplicación permite consultar datos desde el servidor, enviar 
-                        información mediante formularios, visualizar respuestas dinámicas y manejar errores de red, siguiendo 
+                        Cliente-StreetFit es una aplicación móvil Android desarrollada con Android Studio que funciona
+                        como cliente REST para consumir una API backend construida con Spring Boot. Esta app se comunica
+                        con la API usando Retrofit, una librería que facilita las peticiones HTTP y la conversión de
+                        JSON a
+                        objetos Java de forma eficiente. La aplicación permite consultar datos desde el servidor, enviar
+                        información mediante formularios, visualizar respuestas dinámicas y manejar errores de red,
+                        siguiendo
                         una arquitectura cliente-servidor desacoplada y buenas prácticas de desarrollo Android y REST.
                     </p>
                     <div class="div-icono-github-proyecto">
-                        <img src="./recursos/icono-github.png" alt="Img proyecto " class="icono-frontend" onclick="cliente()">
-                        <a href="https://github.com/jorgems-dev/Cliente-StreetFit" class="div-text-p1-enlaces-github">Repositorio de Github</a>
+                        <img src="./recursos/icono-github.png" alt="Img proyecto " class="icono-frontend"
+                            onclick="cliente()">
+                        <a href="https://github.com/jorgems-dev/Cliente-StreetFit"
+                            class="div-text-p1-enlaces-github">Repositorio de Github</a>
                     </div>
                 </div>
             </div>
@@ -380,17 +394,19 @@
                 <div class="div-contacto-info">
                     <a href="tel:+34644959149">
                         <img src="./recursos/telefono.png" alt="Llamar por teléfono" class="icono-contacto">
-                    </a>                    
+                    </a>
                     <p class="div-text-p2-contacto">
                         <a href="tel:+34644959149" target="_blank" rel="noopener">Teléfono</a>
                     </p>
                 </div>
                 <div class="div-contacto-info">
-                    <a href="https://www.linkedin.com/in/mihai-sile-pavel-asiminei-ba2423398/" target="_blank" rel="noopener">
+                    <a href="https://www.linkedin.com/in/mihai-sile-pavel-asiminei-ba2423398/" target="_blank"
+                        rel="noopener">
                         <img src="./recursos/linkedin.png" alt="LinkedIn" class="icono-contacto">
                     </a>
                     <p class="div-text-p2-contacto">
-                        <a href="https://www.linkedin.com/in/mihai-sile-pavel-asiminei-ba2423398/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/mihai-sile-pavel-asiminei-ba2423398/" target="_blank"
+                            rel="noopener">LinkedIn</a>
                     </p>
                 </div>
                 <div class="div-contacto-info">
@@ -411,4 +427,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

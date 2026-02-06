@@ -226,7 +226,7 @@ section.visible {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  height: 80vh;
+  height: 100vh;
   margin: 2rem auto;
 }
 
@@ -352,14 +352,20 @@ section.visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10vh;
+  padding: 3rem;
+}
 
+.sobre-mi-flex {
+  display: flex;
+  gap: 3rem;
 }
 
 .sobre-mi-contenedor {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 3rem;
+  margin: 5rem auto;
 }
 
 .div-text-card {
@@ -376,6 +382,13 @@ section.visible {
   font-size: 2rem;
   text-align: center;
   margin: 2rem auto;
+}
+
+.titulo-sobre-mi-h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .titulo-sobre-mi-principal {
@@ -395,7 +408,7 @@ section.visible {
   width: 100%;
   flex-direction: row;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 2rem;
 }
 
 .card-sobre-mi {
@@ -403,8 +416,7 @@ section.visible {
   background-color: white; 
   color: #e5e7eb; 
   border-radius: 20px;
-  border: #bebebe 2px solid;
-  box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
+  border: #bebebe 1px solid;
   padding: 1rem;
   width: 100%;
   height: 100%;
@@ -413,6 +425,18 @@ section.visible {
   justify-content: flex-start;
   transition: all 0.3s ease-in-out;
   font-family: sans-serif;
+}
+
+.sobre-mi-foto {
+  display: flex;
+  margin: 5rem auto;
+}
+
+.sobre-mi-foto img {
+  border-radius: 20px;
+  border: #bebebe 1px solid;
+  width: 70vh;
+  height: 1000px;
 }
 
 .card-encabezado {
@@ -511,8 +535,7 @@ section.visible {
   width: 100%;
   text-align: justify;
   max-width: 800px;
-  margin-bottom: 2rem;
-
+  margin: 2rem auto;
 }
 
 .div-text-p1-sobre-mi {
@@ -523,7 +546,6 @@ section.visible {
 .div-text-p2-sobre-mi {
   color: black;
   font-size: 1rem;
-  margin: 1rem auto;
 }
 
 .div-text-p3-sobre-mi {
@@ -591,7 +613,7 @@ section.visible {
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  border: #bebebe 2px solid;
+  border: #bebebe 1px solid;
   box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -672,7 +694,7 @@ section.visible {
   min-height: 150px;
   border-radius: 50px;
   background: white;
-  border: #bebebe 2px solid;
+  border: #bebebe 1px solid;
   box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
@@ -800,8 +822,8 @@ section.visible {
   height: auto;
   border-radius: 50px;
   background: white;
-  border: #bebebe 2px solid;
-  box-shadow: 5px 5px 10px #bebebe, -20px -20px 60px #ffffff;
+  border: #bebebe 1px solid;
+  box-shadow: 5px 5px 10px #bebebe, 10px 10px 60px #ffffff;
   padding: 2rem;
   box-sizing: border-box;
   flex-direction: row;
