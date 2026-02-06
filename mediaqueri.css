@@ -244,9 +244,7 @@
   }
 
   .texto-proyectos-p1 {
-    font-weight: 500;
-    font-size: 0.8rem;
-    text-align: justify;
+    display: none;
   }
 
   .div-icono-github-proyecto a{
