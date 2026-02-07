@@ -683,6 +683,60 @@ section.visible {
   color: black;              
 }
 
+#servicios {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.lista-servicios {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 1000px;
+  gap: 2rem;
+}
+
+.titulo-servicios {
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+
+.texto-servicios-p1 {
+  text-align: justify;   
+  font-size: 1rem;       
+  color: black;              
+  max-width: 800px; 
+  padding: 1rem;
+}
+
+.card-servicios {
+  display: flex;
+  width: 100%;
+  min-height: 150px;
+  border-radius: 20px;
+  background: white;
+  border: #bebebe 1px solid;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+  margin: 2rem auto;
+}
+
+.div-servicios-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
 #proyectos{
   text-align: center;
   margin-bottom: 10vh;

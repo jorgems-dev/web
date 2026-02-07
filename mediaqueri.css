@@ -226,6 +226,20 @@
     font-size: 1.1rem;
   }
 
+  .lista-servicios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0;
+  }
+
+  .card-servicios {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
   .lista-proyectos {
     display: flex;
     flex-direction: column;
