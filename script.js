@@ -46,8 +46,8 @@ function abrirCV() {
 
 function descargarCV() {
     const link = document.createElement('a');
-    link.href = 'recursos/CVMihaiSilePavelAsiminei2026.pdf';
-    link.download = 'CV_MihaiSilePavelAsiminei2026.pdf';
+    link.href = 'recursos/CVJorgeMihaiPavelAsiminei2026.pdf';
+    link.download = 'CV_JorgeMihaiPavelAsiminei2026.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
