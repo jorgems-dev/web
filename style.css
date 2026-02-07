@@ -690,11 +690,10 @@ section.visible {
 
 .lista-servicios {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   justify-content: center;
   margin: 0 auto;
-  width: 50%;
-  max-width: 1000px;
+  width: 100%;
   gap: 2rem;
 }
 
@@ -735,6 +734,17 @@ section.visible {
   transition: all 0.3s ease-in-out;
   padding: 1rem;
   margin: 1rem auto;
+}
+
+.btn-info {
+  color: black;
+  margin-top: auto;
+}
+
+
+.btn-info:hover {
+  color: white;
+  background: black;
 }
 
 #proyectos{

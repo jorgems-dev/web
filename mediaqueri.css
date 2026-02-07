@@ -240,6 +240,11 @@
     margin: 1rem auto;
   }
 
+  .btn-info {
+    color: black;
+    margin: 0.5rem auto;
+  }
+
   .lista-proyectos {
     display: flex;
     flex-direction: column;
