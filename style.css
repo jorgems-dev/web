@@ -105,6 +105,12 @@ a {
   font-size: 2rem;
 }
 
+.nombre a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .nombre:hover {
   cursor: default;
 }
@@ -678,7 +684,7 @@ section.visible {
 
 .texto-experiencia-p1 {
   text-align: center;      
-  font-size: 1.25rem; 
+  font-size: 1rem; 
   font-weight: 600;      
   color: black;              
 }
@@ -736,16 +742,29 @@ section.visible {
   margin: 1rem auto;
 }
 
+.div-servicio-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-info {
   color: black;
   margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  
 }
-
 
 .btn-info:hover {
   color: white;
   background: black;
 }
+
+
 
 #proyectos{
   text-align: center;
