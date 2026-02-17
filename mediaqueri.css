@@ -25,6 +25,19 @@
     align-items: center;
     height: 10vh;
   }
+
+  .sobre-mi-foto {
+    display: none;
+  }
+
+  .lista-experiencia {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    gap: 2rem;
+  } 
 }
 
 @media screen and (max-width: 600px) {
@@ -83,29 +96,32 @@
   }
 
   .menu-links {
-    position: absolute;       
-    top: 3vh;             
-    right: 0;              
+    position: fixed;      
+    width: 100vw;
+    height: 100vh;
+    top: 0;             
+    left: 0;        
+    gap: 0;      
     background-color: white;
-    width: fit-content;
-    max-height: 0;         
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 1002; 
-    pointer-events: none;        
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: 3rem;
+    transition: transform 0.2s ease-out;
+    z-index: 999; 
   }
 
   .menu-links.open {
-    max-height: 500px; 
-    pointer-events: auto;    
-  }
+    transform: translateY(0);
+    transition: transform 0.6s ease-out;
+    }
 
   .menu-links li {
     list-style: none;
     border-bottom: 1px solid #ccc;
     margin: 0;
-    padding: 0.5rem 1rem;
+    padding: 1rem 0;
+    text-align: center;
   }
 
   .menu-links li:last-child {
