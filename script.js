@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function abrirCV() {
-    window.open("recursos/CVMihaiSilePavelAsiminei2026.pdf", "_blank")
+    window.open("recursos/CVJorgePavelAsiminei2026.pdf", "_blank")
 }
 
 function descargarCV() {
     const link = document.createElement('a');
-    link.href = 'recursos/CVJorgeMihaiPavelAsiminei2026.pdf';
-    link.download = 'CV_JorgeMihaiPavelAsiminei2026.pdf';
+    link.href = 'recursos/CVJorgePavelAsiminei2026.pdf';
+    link.download = 'CVJorgePavelAsiminei2026.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
