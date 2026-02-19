@@ -176,17 +176,16 @@ a {
   justify-content: flex-start; 
   align-items: center;      
   gap: 2rem;
-  padding: 6rem;
   transform: translateY(-100%);
   transition: transform 0.4s ease-in-out;
   z-index: 999;
+  padding: 5rem;
 }
 
 .menu-links a {
   display: block;
   text-decoration: none;
   width: 100vh;
-  padding: 20px;
   text-align: center;
   font-size: 1.5rem;
   color: black;
@@ -197,9 +196,7 @@ a {
 .menu-links li {
   list-style: none;
   width: 100vh;
-  border-bottom: 1px solid #ccc;
-  margin: 0;
-  padding: 0.5rem 1rem;
+  margin: 0 auto;
   cursor: pointer;
 
 }
