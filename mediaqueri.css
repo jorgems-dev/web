@@ -38,6 +38,11 @@
     width: 100%;
     gap: 2rem;
   } 
+
+  .card-form {
+    display: flex;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -69,7 +74,8 @@
   .titulo-sobre-mi, 
   .titulo-habilidades, 
   .titulo-proyectos, 
-  .titulo-contacto {
+  .titulo-contacto,
+  .titulo-form {
     font-size: 1.5rem;
   }
 
@@ -323,6 +329,15 @@
 
   .icono-contacto-gmail {
     height: 3.2rem;
+  }
+
+  .card-form {
+    display: flex;
+    width: 100%;
+  }
+
+  .div-text-p-form{
+    font-size: 1rem;
   }
 
   footer {

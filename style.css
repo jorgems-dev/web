@@ -912,12 +912,27 @@ section.visible {
   text-align: center;
 }
 
+.div-contacto-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.div-contacto-form:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
 .card-contacto {
   display: flex;
   width: fit-content;
   max-width: 1500px;
   height: auto;
-  border-radius: 50px;
+  border-radius: 20px;
   background: white;
   border: #bebebe 1px solid;
   box-shadow: 5px 5px 10px #bebebe, 10px 10px 60px #ffffff;
@@ -925,9 +940,9 @@ section.visible {
   box-sizing: border-box;
   flex-direction: row;
   align-items: center;
-  gap: 2rem;
   justify-content: center;
   transition: all 0.3s ease-in-out;
+  gap: 2rem;
   margin: 2rem auto;
 }
 
@@ -978,6 +993,73 @@ section.visible {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 1rem;
+}
+
+.titulo-form {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  align-self: center;
+  text-align: center;
+}
+
+.card-form {
+  display: flex;
+  width: 40%;
+  max-width: 1500px;
+  height: auto;
+  border-radius: 20px;
+  background: white;
+  border: #bebebe 1px solid;
+  box-shadow: 5px 5px 10px #bebebe, 10px 10px 60px #ffffff;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+  margin: 2rem auto;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border: #bebebe 2px solid;
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 2rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.textarea {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  border: #bebebe 2px solid;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 2rem;
+  resize: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.input:focus, 
+.textarea:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.div-text-p-form {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: start;
+  margin-left: 1rem;
+  color: #000;
 }
 
 footer {
