@@ -819,6 +819,12 @@ section.visible {
   margin: 2rem auto;
   height: 9.5rem;
 }
+.img-inestal {
+  border-radius: 1rem;
+  object-fit: cover; 
+  margin: 2rem auto;
+  height: 30%;
+}
 
 
 .titulo-proyectos {

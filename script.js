@@ -76,3 +76,6 @@ function restapi() {
 function cliente() {
     location.href = "https://github.com/jorgems-dev/Cliente-StreetFit";
 }
+function inestal() {
+    location.href = "https://jorgems-dev.github.io/web-inestal-padel/";
+}
