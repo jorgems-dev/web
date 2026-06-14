@@ -163,7 +163,7 @@
   }
 
   .titulo-sobre-mi-principal {
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
   .card-sobre-mi {
@@ -280,17 +280,17 @@
   }
 
   .img-backend {
-    width: 40%;
+    width: 30%;
     height: 7rem;
   }
 
   .img-cliente {
-    width: 100%;
+    width: 60%;
     height: auto;
   }
 
   .img-inestal {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
